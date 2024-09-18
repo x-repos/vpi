@@ -1,0 +1,16 @@
+from rsf.proj import *
+
+# Ray tracing
+Flow('rays','velocity',
+     '''
+     ./exe
+     dt=0.0001
+     nt=600000 nr=1
+     a0=190 amax=190
+     b0=10 bmax=10 
+     xshot=7000
+     yshot=2000
+     zshot=0
+     sym=n hor=horizon.rsf
+     --out=stdout''')
+End()

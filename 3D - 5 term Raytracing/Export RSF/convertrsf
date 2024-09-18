@@ -1,0 +1,15 @@
+echo in=velocity.txt n1=165 n2=151 n3=62 data_format=ascii_float >velocity.rsf
+sfdd <velocity.rsf form=native >velocity1.rsf
+<velocity1.rsf sfpad d1=50.000000 d2=160.000000 d3=160.000000 o1=0.000000 o2=160.000000 o3=160.000000 >velocity2.rsf
+<velocity2.rsf sfpad label1="Depth-z" label2="Distance-x" label3="Distance-y">velocity3.rsf
+<velocity3.rsf sfpad unit1="m" unit2="m" unit3="m">velocity4.rsf
+rm velocity1.rsf velocity.rsf velocity2.rsf velocity3.rsf
+sfmath <velocity4.rsf output='input' > velocity.rsf
+rm velocity4.rsf
+echo in=horizon.txt n1=487 n2=200 data_format=ascii_float >horizon.rsf
+sfdd <horizon.rsf form=native >horizon1.rsf
+<horizon1.rsf sfpad d1=50.000000 d2=50.000000 o1=0 o2=0 >horizon2.rsf
+<horizon2.rsf sfpad label1="Distance-x" label2="Distance-y">horizon3.rsf
+<horizon3.rsf sfpad unit1="m" unit2="m" >horizon4.rsf
+sfmath <horizon4.rsf output="input" > horizon.rsf
+rm horizon1.rsf horizon2.rsf horizon3.rsf horizon4.rsf

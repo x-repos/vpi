@@ -1,0 +1,37 @@
+in=horizon.txt n1=487 n2=200 data_format=ascii_float
+3.0	sfdd	Current/3D Raytracing - 6-Term Raytracing - Synthetic Model/Export RSF:	root@Ben	Tue Jan  4 14:47:19 2022
+
+	data_format="native_float"
+	esize=4
+	in="/var/tmp/horizon1.rsf@"
+3.0	sfpad	Current/3D Raytracing - 6-Term Raytracing - Synthetic Model/Export RSF:	root@Ben	Tue Jan  4 14:47:19 2022
+
+	d2=50.000000
+	o1=0
+	o2=0
+	data_format="native_float"
+	esize=4
+	in="/var/tmp/horizon2.rsf@"
+	d1=50.000000
+3.0	sfpad	Current/3D Raytracing - 6-Term Raytracing - Synthetic Model/Export RSF:	root@Ben	Tue Jan  4 14:47:19 2022
+
+	label1=Distance-x
+	data_format="native_float"
+	label2=Distance-y
+	esize=4
+	in="/var/tmp/horizon3.rsf@"
+3.0	sfpad	Current/3D Raytracing - 6-Term Raytracing - Synthetic Model/Export RSF:	root@Ben	Tue Jan  4 14:47:19 2022
+
+	data_format="native_float"
+	esize=4
+	in="/var/tmp/horizon4.rsf@"
+	unit1=m
+	unit2=m
+3.0	sfmath	Current/3D Raytracing - 6-Term Raytracing - Synthetic Model/Export RSF:	root@Ben	Tue Jan  4 14:47:19 2022
+
+	x2=2
+	input=0
+	data_format="native_float"
+	esize=4
+	in="/var/tmp/horizon.rsf@"
+	x1=1
